@@ -15,11 +15,15 @@ const app = express();
 const server = http.createServer(app);
 
 const io = new Server(server, {
-  cors: { origin: "*" }, // Allow all origins for testing
+  cors: { origin: "https://whatsapp-m04k.onrender.com" }, // Allow all origins for testing
 });
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:4173"],
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:4173",
+      "https://whatsapp-m04k.onrender.com",
+    ],
     credentials: true,
   })
 );
