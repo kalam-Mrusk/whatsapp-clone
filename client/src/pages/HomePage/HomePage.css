@@ -1,0 +1,631 @@
+/* *************** left side menu start *************** */
+.leftSideMenu {
+  border-right: 1px solid #7f7f7f;
+  width: 3.5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftSideMenu .bottom-menuItems li,
+.leftSideMenu .top-menuItems li {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.leftSideMenu .top-menuItems {
+  margin-top: 0.6rem;
+}
+.leftSideMenu .top-menuItems li {
+  margin-top: 0.5rem;
+}
+.leftSideMenu .bottom-menuItems li {
+  margin-bottom: 0.5rem;
+}
+.leftSideMenu .m-icon {
+  font-size: 1.7rem;
+  color: #4b4b4b;
+}
+.bottom-menuItems li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.leftSideMenu li:hover {
+  background-color: #e1e1e1;
+}
+.icon-name {
+  position: absolute;
+  left: 2.6rem;
+  background-color: #f1f1f1;
+  padding: 3px 6px;
+  border-radius: 20px;
+  display: none;
+  z-index: 100;
+}
+.leftSideMenu li:hover .icon-name {
+  display: block;
+}
+.top-menuItems .nos-msg {
+  position: absolute;
+  background-color: #1fe2f3;
+  padding: 0px 3.5px;
+  border-radius: 40%;
+  top: -0.15rem;
+  left: 1.2rem;
+  font-size: 0.65rem;
+}
+/* ********** left side menu end ************ */
+
+/* ********** chats box start ************ */
+
+.chat-box-container {
+  border-right: 1px solid #c7c7c7;
+  width: 23rem;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.chat-box-container .chatBox-header-section {
+  width: 100%;
+  padding: 0.3rem;
+  box-sizing: border-box;
+}
+.chatBox-header-section .chatBox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0.3rem;
+}
+.chatBox-header .cb-head-icons .icon {
+  margin: 0rem 0.5rem;
+  color: #4b4b4b;
+  cursor: pointer;
+}
+
+.chatBox-input-section {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 0.9rem;
+  background-color: #e2e2e2;
+  margin-bottom: 0.3rem;
+}
+.chatBox-input-section .sb-icon {
+  width: 16%;
+  display: flex;
+  justify-content: center;
+  color: #7f7f7f;
+}
+.chatBox-input-section input {
+  flex-grow: 1;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #4b4b4b;
+}
+.chatBox-chatFiler-sec {
+  display: flex;
+}
+.chatBox-chatFiler-sec p {
+  padding: 0.2rem 0.35rem;
+  margin-right: 0.3rem;
+  border-radius: 1rem;
+  font-size: small;
+  background-color: #e2e2e2;
+  color: #686868;
+  cursor: pointer;
+}
+
+.chatBoxUserListContainer {
+  width: 100%;
+  height: 37.9rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.chatBoxUserListContainer .chatBoxUser {
+  border-bottom: 1px solid #c7c7c7;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+}
+.chatBoxUser .userProfile {
+  width: 15%;
+}
+.chatBoxUser .userProfile img {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+}
+.chatBoxUser .cb-UserInfo {
+  flex-grow: 1;
+  margin-right: 0.5rem;
+}
+.cb-UserInfo .usernameAndDate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.usernameAndDate h3 {
+  font-size: medium;
+  color: #3d3d3d;
+}
+.usernameAndDate p {
+  font-size: small;
+  color: #686868;
+}
+.userlastmessage p {
+  font-size: small;
+  color: #686868;
+  position: relative;
+  width: 100%;
+}
+
+.userlastmessage p .unseenMsg {
+  position: absolute;
+  background-color: #009a00;
+  border-radius: 50%;
+  color: #fff;
+  padding: 0.15rem 0.4rem;
+  right: 0px;
+  font-size: 0.7rem;
+}
+.userlastmessage .camvid {
+  display: flex;
+  align-items: center;
+}
+.userlastmessage .camvid .ulm-icons {
+  color: #7f7f7f;
+  font-size: 1.1rem;
+  margin-right: 0.1rem;
+}
+.chatBoxUser:hover {
+  background-color: #cccccc;
+}
+
+/* .................status components satrt.................... */
+
+.status-box-container {
+  border-right: 1px solid #c7c7c7;
+  width: 23rem;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.status-box-container .statusBox-header-section {
+  width: 100%;
+  padding: 0.3rem;
+  box-sizing: border-box;
+}
+.statusBox-header-section .statusBox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0.3rem;
+}
+.statusBox-header .statusBox-head-icons .statusBox-icon {
+  margin: 0rem 0.4rem;
+
+  border-radius: 50%;
+  padding: 0.1rem;
+  color: #4b4b4b;
+  cursor: pointer;
+}
+.statusBox-head-icons .statusBox-icon:hover {
+  background-color: #e1e1e1;
+}
+
+.statusBoxUserListContainer {
+  width: 100%;
+  height: 37rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.statusBoxUser {
+  border-bottom: 1px solid #c7c7c7;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+}
+.statusBoxUser .statusBox-userProfile {
+  width: 15%;
+}
+.statusBoxUser .statusBox-userProfile img {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+}
+.statusBoxUser .statusBox-UserInfo {
+  flex-grow: 1;
+  margin-left: 0.3rem;
+}
+.statusBox-UserInfo .statusBox-usernameAndDate {
+  justify-content: space-between;
+}
+.statusBox-usernameAndDate h3 {
+  font-size: medium;
+  color: #3d3d3d;
+}
+.statusBox-usernameAndDate p {
+  font-size: small;
+  color: #686868;
+}
+.userlastmessage p {
+  font-size: small;
+  color: #686868;
+  position: relative;
+  width: 100%;
+}
+
+/* ...................status end..................... */
+
+/* ..............setting components start............... */
+
+.setting-box-container {
+  border-right: 1px solid #c7c7c7;
+  width: 23rem;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.setting-box-container .settingBox-header-section {
+  width: 100%;
+  padding: 0.3rem;
+  box-sizing: border-box;
+}
+.settingBox-header-section .settingBox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0.3rem;
+}
+.settingBox-input-section {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 0.9rem;
+  background-color: #e2e2e2;
+  margin-bottom: 0.3rem;
+}
+.settingBox-input-section .settingBox-icon {
+  width: 16%;
+  display: flex;
+  justify-content: center;
+  color: #7f7f7f;
+}
+.settingBox-input-section input {
+  flex-grow: 1;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #4b4b4b;
+}
+.settingProfile {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0rem;
+}
+.settingProfile .settingProImg {
+  width: 20%;
+}
+.settingProfile .settingProImg img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+.settingProNameAbout p {
+  font-size: small;
+  color: #686868;
+}
+
+.settingItemContainer .settingItems {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+}
+.settingItems .sttIcon {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  color: #686868;
+}
+.sttIconName {
+  border-bottom: 1px solid #cccccc;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.settingItems:hover {
+  background-color: #e1e1e1;
+}
+
+/* ..............setting components end............... */
+
+/* ..............profile components end............... */
+.profile-box-container {
+  border-right: 1px solid #c7c7c7;
+  width: 23rem;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.profile-box-container .profileBox-header-section {
+  width: 100%;
+  padding: 0.3rem;
+  box-sizing: border-box;
+}
+.profileBox-header-section .profileBox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0.3rem;
+}
+.ProfileBoxProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0rem;
+}
+.ProfileBoxProfile .ProfileBoxProImg {
+  position: relative;
+}
+.ProfileBoxProfile .ProfileBoxProImg .edit {
+  position: absolute;
+  top: 3.5rem;
+  right: 3.1rem;
+  color: #fff;
+  font-size: larger;
+  font-weight: 600;
+  display: none;
+}
+
+.ProfileBoxProfile .ProfileBoxProImg img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.ProfileBoxProImg:hover .edit {
+  display: block;
+  cursor: pointer;
+}
+.profileItemContainer {
+  padding: 1rem;
+}
+.profileBoxName p,
+.profileBoxAbout p {
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+.profileBoxAbout h3 {
+  margin-top: 1rem;
+}
+.nameOrIcon,
+.AboutOrIcon {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8rem 0rem;
+}
+.proboxIcon {
+  cursor: pointer;
+  color: #7f7f7f;
+}
+.proboxIcon:hover {
+  color: #3d3d3d;
+}
+/* ..............profile components end............... */
+
+/* --------message box components start- ------*/
+
+/* header start */
+
+.messageBoxMainContainer {
+  flex-grow: 2;
+}
+.messageBoxHeaderContaineter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #c9c9c9;
+}
+.msgBoxHeadContLeft {
+  cursor: pointer;
+}
+.msgBoxHeadImg img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.msgBoxHeadName {
+  font-weight: 600;
+}
+.msgBoxHeadName .online {
+  font-size: 0.8rem;
+  color: #00be00;
+}
+.msgBoxHeadContLeft,
+.msgBoxHeadContRight ul {
+  display: flex;
+  align-items: center;
+}
+.msgBoxIcon {
+  color: #4b4b4b;
+}
+.msgBoxHeadContRight ul li {
+  list-style: none;
+  margin: 0rem 0.5rem;
+  cursor: pointer;
+  background-color: #e3e3e3;
+  padding: 0.1rem 0.25rem;
+  border-radius: 50%;
+}
+
+/* header end */
+
+/* message pad start */
+
+.messagePadContainer {
+  height: 83.5vh;
+  overflow: auto;
+}
+.msgPad {
+  display: flex;
+}
+.userMsgContainer {
+  background-color: #dbdbdb;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  max-width: 18rem;
+  margin: 0.5rem 0.8rem;
+  font-size: 1rem;
+  color: #4b4b4b;
+}
+.msgTime {
+  width: 100%;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  color: #686868;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.userMsgContainer .msgMoreIcon {
+  position: absolute;
+  left: -0.15rem;
+  bottom: 0.4rem;
+  font-size: 1.35rem;
+  cursor: pointer;
+  display: none;
+}
+.userMsgContainer .msgHeartIcon {
+  position: absolute;
+  left: -0.4rem;
+  bottom: 0.4rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: none;
+}
+
+.userMsgContainer:hover .msgMoreIcon,
+.userMsgContainer:hover .msgHeartIcon {
+  display: inline;
+}
+/* message pad end */
+
+/* footer start */
+
+.messageBoxFooterContainer {
+  background-color: #cccccc;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0rem;
+}
+.msgBoxFootPlusIcon,
+.msgBoxFootMicOrsend,
+.emojiIcon {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #4b4b4b;
+  margin: 0rem 0.2rem;
+}
+.msgBoxFootInputOrEmojiCont {
+  display: flex;
+  background-color: #f0eeee;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.2rem;
+  flex-grow: 1;
+}
+
+.msgBoxFootInputOrEmojiCont input {
+  flex-grow: 2;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 0.3rem;
+}
+/* --------message box components end- ------*/
+
+/* ........contact info components start......... */
+.contactInfo-box-container {
+  border-right: 1px solid #c7c7c7;
+  width: 23rem;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.contactInfo-box-container .contactInfoBox-header-section {
+  width: 100%;
+  padding: 0.3rem;
+  box-sizing: border-box;
+}
+.contactInfoBox-header-section .contactInfoBox-header {
+  display: flex;
+  align-items: center;
+  margin: 0.8rem 0.3rem;
+}
+
+.contactInfoBoxProImg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.conInfo_innerProImgCont {
+  text-align: center;
+}
+.conInfo_innerProImgCont img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.contactInfoItemContainer {
+  padding: 1rem;
+}
+
+.contactInfoBoxAbout p {
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+.contactInfoBoxAbout h3 {
+  margin-top: 0.5rem;
+}
+.conInfoAbout {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8rem 0rem;
+}
+.contactInfoItems {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  cursor: pointer;
+}
+.contactInfoItems .contactInfoIcon {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  color: #df3939;
+}
+.contactInfoIconName {
+  border-bottom: 1px solid #cccccc;
+  color: #df3939;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.contactInfoItems:hover {
+  background-color: #e1e1e1;
+}
